@@ -1,0 +1,44 @@
+@p maximum_input_line_length  = 200
+=============================
+  MATE Delayed Sleep Applet
+   Created to free for you
+          III 2018
+=============================
+
+A quick review of syntax of this build file (and FunnelWeb in general) is in order.
+
+In a kind of inverse of usual coding practice, here code is embedded in documentation.
+Literally all of the code of this project is embedded in this one file.
+You probably already guessed we need to specify filenames of generated files here.
+
+Output files are defined like this:
+
+@O@<AUTHORS@>==@{
+Marek Spociñski
+@}
+
+This will create the AUTHORS file in current directory. Nothing fancy here, just my name.
+But wait, you say, this isn't archiving format! This is supposed to be a coding format!
+
+That's why we use reusable pieces of data, usually pieces of code, and name them as sections:
+
+@$@<friendly name@>@Z==@{@-
+Buzzer Snoozer@-
+@}
+
+From on now, @@<friendly name@@> can be used in files and sections throughout our project.
+
+The @@- at the end of line denotes that we don't want to include that newline in the substitution.
+
+By default FunnelWeb will fail loudly if we define a section and we don't use it anywhere,
+so I've added @@Z to the definition to "allow (Z)ero uses".
+
+The Literate Programming Process is usually split into two steps called "weaving" and "tangling".
+Weaving (from v. to weave)
+
+=============================
+  The Buzzer Snoozer itself
+=============================
+
+
+

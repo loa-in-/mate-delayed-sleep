@@ -1,0 +1,11 @@
+[Applet Factory]
+Id=Loa-in-DelayedSleepAppletFactory
+InProcess=false
+Location=/home/rne/programming/mate-delayed-sleep/src/mate-delayed-sleep.py
+Name=Buzzer Snoozer Factory
+Description=A MATE Python Applet example factory
+
+[BuzzerSnoozerApplet]
+Name=Buzzer Snoozer
+Description=MATE Delayed Sleep Handy Applet (Buzzer Snoozer)
+Icon=mate
